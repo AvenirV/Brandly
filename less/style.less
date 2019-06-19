@@ -1,0 +1,178 @@
+/* Colors */
+@redall: #dc0000;
+@maingray: #4d4d4d;
+@textgray: #777777;
+
+/*FONTS*/
+@import url('..://fonts.googleapis.com/css?family=Lato:400,700,900|Open+Sans:300,300i,400,700&display=swap');
+@import url(http://allfont.ru/allfont.css?fonts=bebas-neue);
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/BebasNeueBook.eot');
+    src: url('../fonts/BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BebasNeueRegular.woff2') format('woff2'),
+        url('../fonts/BebasNeueRegular.woff') format('woff'),
+        url('../fonts/BebasNeueRegular.ttf') format('truetype'),
+        url('../fonts/BebasNeueRegular.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue Book';
+    src: url('../fonts/BebasNeueBook.eot');
+    src: url('../fonts/BebasNeueBook.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BebasNeueBook.woff2') format('woff2'),
+        url('../fonts/BebasNeueBook.woff') format('woff'),
+        url('../fonts/BebasNeueBook.ttf') format('truetype'),
+        url('../fonts/BebasNeueBook.svg#BebasNeueBook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Bebas Neue', arial;
+}
+
+.nav-link {
+    display: inline-block;
+    opacity: 0.9;
+    padding: 2rem;
+    color: aliceblue;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+.nav-link:hover, .semi:active { 
+    max-width: 100px;
+    color: @redall; 
+    
+    
+}
+
+.nav-brand {
+    opacity: 0.8;
+    display: inline-block;
+    height: 7rem;
+    line-height: 4rem;
+    color: @redall;
+    font-family:'Bebas Neue', sans-serif;
+    font-size: 48pt;
+}
+.nav-brand2 {
+    opacity: 0.7;
+    display: inline-block;
+    color: @redall;
+    font-family:'Bebas Neue Book', sans-serif;
+    font-size: 36px;
+}
+main {
+    background: #4d4d4d url(../img/main-bg.jpg)  no-repeat;
+    background-size: cover;
+    padding: 2rem;
+    padding-bottom: 120px;
+}
+
+h1 {
+    
+    text-align: center;
+    font-family: 'Lato Black', sans-serif;
+    font-size: 5.5rem;
+    color: #e6e2e2;
+    margin: 30px auto;
+}
+h2 {
+    text-align: center;
+    opacity: 0.7;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 2.5rem;
+    color: #e6e2e2;
+    &.top-subtitle {
+    margin-top: 140px;
+    }
+    &.produckt-title{
+    color: #333333;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3rem;
+    font-weight: 300;
+    }
+}
+button, input, a {
+    &:focus {
+    outline: none;  
+    }
+}
+
+.semi {
+    
+    opacity: 0.8;
+    text-align: center;
+    color: #fbfafa; 
+    background: none; 
+    border: 1px solid #fbfafa; 
+    font-size: 15px; 
+    padding: 9px 5px;
+    font-weight: normal;
+    text-decoration: none; 
+    font-family: 'Lato Black', sans-serif; 
+    min-width: 150px; 
+    border-radius: 3px;
+    &.center {
+    display: block;
+    margin: 50px auto;
+    }
+    
+}  
+.semi:hover, .semi:active { 
+    color: @redall; 
+    background: #1b1c1f; 
+}
+
+.red-line {
+    margin: -30px auto 10px;
+    padding: 0;
+    height: 50px;
+    border: none;
+    color: @redall;
+    border-bottom: 1.5px solid @redall;
+    box-shadow: 0 2px 2px -2px #333;
+    width: 7%;
+}
+
+
+
+
+
+/*Basic settings*/
+
+html {
+font-size: 10px;
+}
+/*Typography*/
+
+section {
+    padding: 3rem 0;
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (max-width: 992px) {
+    .nav-link {
+    text-align: center;
+    font-size: 1.3rem;
+
+    }
+    .nav-brand {
+    font-size: 35pt;
+    }
+    .nav-brand2 {
+    font-size: 25pt;
+    }
+
+}
